@@ -44,7 +44,11 @@ async function bootstrap() {
 
     app.setGlobalPrefix('api');
 
-    app.enableCors({ origin: ['http://localhost:3000', 'https://cms-lyart.vercel.app'], credentials: true });
+    // app.enableCors({ origin: ['http://localhost:3000', 'https://cms-lyart.vercel.app'], credentials: true });
+    app.enableCors({
+        origin: ['http://localhost:3000', 'https://course-management-system.vercel.app', 'http://dbllinxu.top'],
+        credentials: true,
+    });
 
     if (isProd) {
         useProd(app);

@@ -1,9 +1,9 @@
 {
     "type": "mysql",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "port": 3306,
     "username": "root",
-    "password": "honey_badger",
+    "password": "123456",
     "database": "cms",
     "entities": ["dist/**/*.entity{.ts,.js}"],
     "synchronize": true,
